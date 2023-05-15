@@ -8,7 +8,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     set(CMAKE_BUILD_TYPE "Release" CACHE STRING "" FORCE)
   endif()
 
-  set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -msse2 -mavx2 -flto")
+  set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -msse2 -mavx2")
 endif()
 
 find_package(ament_cmake REQUIRED)
